@@ -1,0 +1,7 @@
+#summary LAMG software performance for a real-world graph collection.
+
+= Introduction =
+
+TBA
+
+See the [http://arxiv.org/abs/1108.0123 LAMG ArXiv technical report] for more details.
