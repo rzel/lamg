@@ -20,8 +20,8 @@
 {{{
 >> lamg_example
 }}}
-Output should be:
-{{{
+  Output should be:
+  {{{
 Initial     e=4.589e+002
 Iter    1   e=2.896e+002  conv=0.631   time=0.13 [sec]
 Iter    2   e=9.245e+001  conv=0.319   time=0.0045 [sec]
