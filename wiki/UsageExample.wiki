@@ -21,12 +21,53 @@ b = b - mean(b);
 [x, details] = lamg.linearSolve(setup, b);
 }}}
 
+Output (when debugging is turned on):
+{{{
+Initial     e=4.589e+002
+Iter    1   e=2.896e+002  conv=0.631   time=0.1 [sec]
+Iter    2   e=9.245e+001  conv=0.319   time=0.0061 [sec]
+Iter    3   e=3.202e+001  conv=0.346   time=0.0068 [sec]
+Iter    4   e=1.172e+001  conv=0.366   time=0.0081 [sec]
+Iter    5   e=4.456e+000  conv=0.380   time=0.0065 [sec]
+Iter    6   e=1.704e+000  conv=0.382   time=0.0064 [sec]
+Iter    7   e=6.522e-001  conv=0.383   time=0.0064 [sec]
+Iter    8   e=2.509e-001  conv=0.385   time=0.0065 [sec]
+Iter    9   e=9.698e-002  conv=0.387   time=0.006 [sec]
+Iter   10   e=3.766e-002  conv=0.388   time=0.0064 [sec]
+Iter   11   e=1.469e-002  conv=0.390   time=0.0057 [sec]
+Iter   12   e=5.745e-003  conv=0.391   time=0.0051 [sec]
+Iter   13   e=2.254e-003  conv=0.392   time=0.0053 [sec]
+Iter   14   e=8.868e-004  conv=0.393   time=0.0049 [sec]
+Iter   15   e=3.498e-004  conv=0.394   time=0.0053 [sec]
+Iter   16   e=1.383e-004  conv=0.395   time=0.005 [sec]
+Iter   17   e=5.477e-005  conv=0.396   time=0.0057 [sec]
+Iter   18   e=2.174e-005  conv=0.397   time=0.0056 [sec]
+Iter   19   e=8.648e-006  conv=0.398   time=0.0058 [sec]
+Iter   20   e=3.446e-006  conv=0.398   time=0.0051 [sec]
+Total time: 0.25 [sec]
+
+x =
+
+  -17.4562
+  -17.4325
+  -17.3875
+  -17.3237
+  ...
+
+details = 
+
+          stats: [1x1 struct]
+    convHistory: [20x1 double]
+          index: 0.3961
+}}}
+
 =Customizing the Algorithm=
 LAMG is supposed to be a black-box solver, so in most cases you don't need to tweak any options!
 
 If you do need to, all options are attributes of the class `amg.api.Options` and described therein. You can pass key-value pairs at the end of the `Lamg()`, `Lamg.setup()` and Lamg.solve()` calls. Examples:
 {{{
-% Measure convergence in the residual L2 norm. Options passed to the constructor are used by both the setup and solve phases.
+% Measure convergence in the residual L2 norm.
+% Options passed to the constructor are used by both the setup and solve phases.
 lamg = Lamg('errorNorm', @errorNormResidual);
 
 % Stop coarsening when the graph has less than 200 edges
