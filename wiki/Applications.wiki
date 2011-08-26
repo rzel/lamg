@@ -4,7 +4,7 @@ Definition of a Laplacian matrix: see [http://en.wikipedia.org/wiki/Laplacian_ma
 
 = Laplacian Applications =
 
-An excellent review of Laplacian applications appears in [D. Spielman's ICM 2010 paper http://www.cs.yale.edu/homes/spielman/PAPERS/icm10post.pdf].
+An excellent review of Laplacian applications appears in [http://www.cs.yale.edu/homes/spielman/PAPERS/icm10post.pdf D. Spielman's ICM 2010 paper].
 
 Laplacian matrices of graphs arise in 
   * Large-scale computational applications such as machine learning
