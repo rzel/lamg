@@ -1,6 +1,6 @@
 #summary Application of Laplacian Matrices.
 
-Definition of a Laplacian matrix: see [Wikipedia http://en.wikipedia.org/wiki/Laplacian_matrix].
+Definition of a Laplacian matrix: see [http://en.wikipedia.org/wiki/Laplacian_matrix Wikipedia].
 
 = Laplacian Applications =
 
