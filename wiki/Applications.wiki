@@ -1,10 +1,9 @@
 #summary Application of Laplacian Matrices.
 
-Definition of a Laplacian matrix: see [http://en.wikipedia.org/wiki/Laplacian_matrix Wikipedia].
+  * Definition of a Laplacian matrix: see [http://en.wikipedia.org/wiki/Laplacian_matrix Wikipedia].
+  * An excellent review of Laplacian applications appears in [http://www.cs.yale.edu/homes/spielman/PAPERS/icm10post.pdf D. Spielman's ICM 2010 paper].
 
-= Laplacian Applications =
-
-An excellent review of Laplacian applications appears in [http://www.cs.yale.edu/homes/spielman/PAPERS/icm10post.pdf D. Spielman's ICM 2010 paper].
+= Applications of Laplacian Matrix =
 
 Laplacian matrices of graphs arise in 
   * Large-scale computational applications such as machine learning
@@ -12,4 +11,4 @@ Laplacian matrices of graphs arise in
   * Transportation network flows; electrical resistor circuits
   * Elliptic partial differential equations discretized on unstructured grids with finite elements. 
 
-The LAMG code was demonstrated to scale linearly for a diverse set of 1666 real-world graphs with up to six million edges.
+The LAMG MATLAB code was demonstrated to scale linearly for a diverse set of 1666 real-world graphs from these applications with up to six million edges.
