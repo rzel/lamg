@@ -1,4 +1,47 @@
 #summary LAMG MATLAB code installation instructions.
 
   * *Step 1:* [http://code.google.com/p/lamg/downloads/list Download] the latest release of the code.
-  * *Step 2:* 
+  * *Step 2:* unzip the LAMG distribution file into a directory, say `C:\lamg`.
+  * *Step 2: Add the following directories to your MATLAB path (e.g., edit the provided pathdef.m and type "p=pathdef; path(p);" at the MATLAB prompt):
+{{{
+     C:\lamg\amg\main\util
+     C:\lamg\amg\main
+     C:\lamg\graph\graphViz4Matlab
+     C:\lamg\graph\graphViz4Matlab\layouts
+     C:\lamg\graph\graphViz4Matlab\util
+     C:\lamg\graph\main
+     C:\lamg\graph\ufget
+     C:\lamg\core\util
+     C:\lamg\core\main
+     C:\lamg\core\lightspeed
+     C:\lamg\core\matlab_xunit\xunit
+}}}
+3. To verify a successful installation of LAMG, type at the MATLAB prompt:
+{{{
+>> lamg_example
+}}}
+Output should be:
+{{{
+Initial     e=4.589e+002
+Iter    1   e=2.896e+002  conv=0.631   time=0.13 [sec]
+Iter    2   e=9.245e+001  conv=0.319   time=0.0045 [sec]
+Iter    3   e=3.202e+001  conv=0.346   time=0.0041 [sec]
+Iter    4   e=1.172e+001  conv=0.366   time=0.0053 [sec]
+Iter    5   e=4.456e+000  conv=0.380   time=0.0042 [sec]
+Iter    6   e=1.704e+000  conv=0.382   time=0.004 [sec]
+Iter    7   e=6.522e-001  conv=0.383   time=0.004 [sec]
+Iter    8   e=2.509e-001  conv=0.385   time=0.004 [sec]
+Iter    9   e=9.698e-002  conv=0.387   time=0.004 [sec]
+Iter   10   e=3.766e-002  conv=0.388   time=0.004 [sec]
+Iter   11   e=1.469e-002  conv=0.390   time=0.004 [sec]
+Iter   12   e=5.745e-003  conv=0.391   time=0.0062 [sec]
+Iter   13   e=2.254e-003  conv=0.392   time=0.0069 [sec]
+Iter   14   e=8.868e-004  conv=0.393   time=0.0064 [sec]
+Iter   15   e=3.498e-004  conv=0.394   time=0.0064 [sec]
+Iter   16   e=1.383e-004  conv=0.395   time=0.0063 [sec]
+Iter   17   e=5.477e-005  conv=0.396   time=0.0065 [sec]
+Iter   18   e=2.174e-005  conv=0.397   time=0.0057 [sec]
+Iter   19   e=8.648e-006  conv=0.398   time=0.0067 [sec]
+Iter   20   e=3.446e-006  conv=0.398   time=0.0069 [sec]
+Total time: 0.26 [sec] 
+}}}
