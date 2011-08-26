@@ -1,0 +1,4 @@
+#summary LAMG MATLAB code installation instructions.
+
+  * *Step 1:* [http://code.google.com/p/lamg/downloads/list Download] the latest release of the code.
+  * *Step 2:* 
