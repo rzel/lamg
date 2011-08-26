@@ -1,5 +1,6 @@
 #summary LAMG MATLAB code installation instructions.
 
+=Installation=
   * *Step 1:* [http://code.google.com/p/lamg/downloads/list Download] the latest release of the code.
   * *Step 2:* unzip the LAMG distribution file into a directory, say `C:\lamg`.
   * *Step 3:* Add the following directories to your MATLAB path (e.g., edit the provided pathdef.m and type "p=pathdef; path(p);" at the MATLAB prompt):
@@ -44,4 +45,10 @@ Iter   18   e=2.174e-005  conv=0.397   time=0.0057 [sec]
 Iter   19   e=8.648e-006  conv=0.398   time=0.0067 [sec]
 Iter   20   e=3.446e-006  conv=0.398   time=0.0069 [sec]
 Total time: 0.26 [sec] 
+}}}
+
+=Configuring Logging Levels=
+Edit 'logging_config.m'. Logging level conventions are the same as in [http://logging.apache.org/log4j/1.2/ Log4J]: 'ERROR,WARN,INFO,DEBUG,TRACE'. Levels are per package and inherited from the parent package if not specified. For instance, to suppress all logging messages, you need only one line at the bottom of the file:
+{{{
+logger('amg')                                           = 'WARN';
 }}}
