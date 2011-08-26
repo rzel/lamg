@@ -1,0 +1,36 @@
+#summary Examples of running LAMG in MATLAB.
+
+=Basic Example=
+<a ref="#usage">
+{{{
+% Construct a solver
+lamg = Lamg();
+
+% Create a graph adjacency matrix A. Note: g.laplacian is the corresponding
+% Laplacian matrix.
+g = Graphs.grid('fd', [20 20]);
+A = g.symAdjacency;
+
+% Setup phase: construct a LAMG multi-level hierarchy
+setup = lamg.setup(A);  % Or setup = lamg.setup(g);
+
+% Solve phase: set up a compatible RHS b (remember: A is singular) and
+% solve A*x=b
+b = (1:size(A,1))';
+b = b - mean(b);
+[x, details] = lamg.linearSolve(setup, b);
+}}}
+
+=Customizing the Algorithm=
+LAMG is supposed to be a black-box solver, so in most cases you don't need to tweak any options!
+
+If you do need to, all options are attributes of the class `amg.api.Options` and described therein. You can pass key-value pairs at the end of the `Lamg()`, `Lamg.setup()` and Lamg.solve()` calls. Examples:
+{{{
+% Measure convergence in the residual L2 norm. Options passed to the constructor are used by both the setup and solve phases.
+lamg = Lamg('errorNorm', @errorNormResidual);
+
+% Stop coarsening when the graph has less than 200 edges
+setup = lamg.setup(A, 'maxDirectSolverSize', 200);
+
+% Solve A*x=b to 8 significant figures
+[x, details] = lamg.linearSolve(setup, b, 'errorReductionTol', 1e-8);
