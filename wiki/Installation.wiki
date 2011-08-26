@@ -48,7 +48,7 @@ Total time: 0.26 [sec]
 }}}
 
 =Configuring Logging Levels=
-Edit 'logging_config.m'. Logging level conventions are the same as in [http://logging.apache.org/log4j/1.2/ Log4J]: 'ERROR,WARN,INFO,DEBUG,TRACE'. Levels are per package and inherited from the parent package if not specified. For instance, to suppress all logging messages, you need only one line at the bottom of the file:
+Edit 'logging_config.m'. Logging level conventions are the same as in [http://logging.apache.org/log4j/1.2/ Log4J]: `ERROR,WARN,INFO,DEBUG,TRACE`. Levels are per package and inherited from the parent package if not specified. For instance, to suppress all logging messages, you need only one line at the bottom of the file:
 {{{
-logger('amg')                                           = 'WARN';
+logger('amg') = 'WARN';
 }}}
