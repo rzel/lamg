@@ -2,7 +2,7 @@
 
   * *Step 1:* [http://code.google.com/p/lamg/downloads/list Download] the latest release of the code.
   * *Step 2:* unzip the LAMG distribution file into a directory, say `C:\lamg`.
-  * *Step 2: Add the following directories to your MATLAB path (e.g., edit the provided pathdef.m and type "p=pathdef; path(p);" at the MATLAB prompt):
+  * *Step 3:* Add the following directories to your MATLAB path (e.g., edit the provided pathdef.m and type "p=pathdef; path(p);" at the MATLAB prompt):
 {{{
      C:\lamg\amg\main\util
      C:\lamg\amg\main
@@ -16,7 +16,7 @@
      C:\lamg\core\lightspeed
      C:\lamg\core\matlab_xunit\xunit
 }}}
-3. To verify a successful installation of LAMG, type at the MATLAB prompt:
+  * *Step 4*: verify a successful installation of LAMG by typing at the MATLAB prompt:
 {{{
 >> lamg_example
 }}}
