@@ -1,7 +1,7 @@
 #summary LAMG software performance for a real-world graph collection.
 
-= Introduction =
+The provided LAMG MATLAB implementation scaled linearly for a diverse set of 1666 real-world graphs with up to six million edges. This multilevel methodology can be fully parallelized and extended to eigenvalue problems and other graph computations. 
 
-TBA
+See the [http://arxiv.org/abs/1108.0123 LAMG ArXiv technical report], section 4 for details.
 
-See the [http://arxiv.org/abs/1108.0123 LAMG ArXiv technical report] for more details.
+More details and figures TBA here.
