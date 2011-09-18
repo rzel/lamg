@@ -1,6 +1,6 @@
 #summary LAMG software performance for a real-world graph collection.
 
-The provided LAMG MATLAB implementation scaled linearly for a diverse set of 1680 real-world graphs with up to six million edges available at the [Downloads] section. This multilevel methodology can be fully parallelized and extended to eigenvalue problems and other graph computations. 
+The provided LAMG MATLAB implementation scaled linearly for a diverse set of 1680 real-world graphs with up to six million edges available at the [http://code.google.com/p/lamg/downloads/list Downloads] section. This multilevel methodology can be fully parallelized and extended to eigenvalue problems and other graph computations. 
 
 See the [http://arxiv.org/abs/1108.0123 LAMG ArXiv technical report], section 4 for details.
 
@@ -9,13 +9,13 @@ All times are in seconds. Solve times are per significant figure. Total time = s
 
 <code>
 Statistics for 1213 graphs out of 1680 with at least 5000 edges.
-Total time    [sec]: median=2.1e-005   mean=2.8e-005 +- 2.5e-005
-Setup time    [sec]: median=1.5e-005   mean=1.7e-005 +- 1.2e-005
-Solve time    [sec]: median=7.1e-007   mean=1.5e-006 +- 2.3e-006 - flat correction
-Solve time    [sec]: median=6.3e-007   mean=1.1e-006 +- 1.4e-006 - adaptive (minres)
+Total time    sec: median=2.1e-005   mean=2.8e-005 +- 2.5e-005
+Setup time    sec: median=1.5e-005   mean=1.7e-005 +- 1.2e-005
+Solve time    sec: median=7.1e-007   mean=1.5e-006 +- 2.3e-006 - flat correction
+Solve time    sec: median=6.3e-007   mean=1.1e-006 +- 1.4e-006 - adaptive (minres)
 ACF (flat, nontrivial)       : median=0.153      mean=0.221 +- 0.201
 ACF (adaptive, nontrivial)   : median=0.040      mean=0.061 +- 0.061
-Adaptive gain [sec]: median=1.127      mean=1.208 +- 0.291
+Adaptive gain sec: median=1.127      mean=1.208 +- 0.291
 %Setup (flat):       median=68.4%      mean=66.0% +- 16.6%
 %Setup (adaptive):   median=71.1%      mean=69.9% +- 12.7%
 </code>
