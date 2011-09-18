@@ -3,7 +3,7 @@
 = Linear Solvers =
 
   * [http://code.google.com/p/pyamg/ pyamg] - algebraic multigrid solvers in python. Authors: Nathan Bell, Luke Olson, Jacob Schroder.
-  * [AGMG http://homepages.ulb.ac.be/~ynotay/AGMG/] - Iterative solution with AGgregation-based algebraic MultiGrid. Author: Y. Notay, A. Napov.
-  * [MATLAB's backslash operator http://www.mathworks.com/help/techdoc/ref/mldivide.html]. Author: Mathworks.
+  * [http://homepages.ulb.ac.be/~ynotay/AGMG/ AGMG] - Iterative solution with AGgregation-based algebraic MultiGrid. Author: Y. Notay, A. Napov.
+  * [http://www.mathworks.com/help/techdoc/ref/mldivide.html MATLAB's backslash operator]. Author: Mathworks. Proprietary.
 
 = Eigensolvers =
