@@ -6,8 +6,9 @@ Linear solvers of A*x=b, where A is symmetric positive semi-definite, large, spa
   * [http://code.google.com/p/pyamg/ pyamg] - algebraic multigrid solvers in python. Nathan Bell, Luke Olson, Jacob Schroder. python.
   * [http://homepages.ulb.ac.be/~ynotay/AGMG/ AGMG] - Iterative solution with AGgregation-based algebraic MultiGrid. Y. Notay, A. Napov. Fortran, MATLAB.
   * [http://www.mathworks.com/help/techdoc/ref/mldivide.html MATLAB's backslash operator].  Mathworks. Proprietary. MATLAB.
-  * [http://trilinos.sandia.gov/packages/docs/dev/packages/epetraext/doc/html/epetraext_petsc_interface.html EpetraExt-Petsc]. Sandia National Labs. C++. Open-source.
-  * [http://www.sparsol.com SparSol]. Neurok Software company. Neurok Software has a legal right to license this code.
+  * [http://acts.nersc.gov/hypre/ Hypre]. Library for solving large, sparse linear systems of equations on massively parallel computers. Livermore National Lab. Open Source. Fortran, C.
+  * [http://trilinos.sandia.gov/packages/docs/dev/packages/epetraext/doc/html/epetraext_petsc_interface.html EpetraExt-Petsc]. Sandia National Labs. Open-source. C++.
+  * [http://www.sparsol.com SparSol]. Neurok Software company. Neurok Software has a legal right to license this code. C++, Fortran.
   
 = Eigensolvers =
 Eigensolvers of A*x=lam*B*x where A is symmetric positive semi-definite and B is symmetric positive definite. A,B large, sparse. Find the K largest or smallest eigenpairs.
