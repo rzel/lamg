@@ -1,0 +1,6 @@
+#summary A taxonomy of related solvers of large sparse linear system.
+
+= Linear Solvers =
+* [pyamg http://code.google.com/p/pyamg/] - algebraic multigrid solvers in python
+
+= Eigensolvers =
