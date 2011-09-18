@@ -12,6 +12,6 @@ Linear solvers of A*x=b, where A is symmetric positive semi-definite, large, spa
 = Eigensolvers =
 Eigensolvers of A*x=lam*B*x where A is symmetric positive semi-definite and B is symmetric positive definite. A,B large, sparse. Find the K largest or smallest eigenpairs.
 
-  * [MATLAB's eigs http://www.mathworks.com/help/techdoc/ref/eigs.html]. Mathworks. Proprietary. MATLAB.
-  * [LOBPCG http://www.mathworks.com/matlabcentral/fileexchange/48-lobpcg-m]. Locally Optimal Block Preconditioned Conjugate Gradient Method (LOBPCG). Andrew Knyazev. Open source. MATLAB.
-  * [FILTRAN http://www-users.cs.umn.edu/~saad/software/filtlan/index.html]. Software library written in C/C++ for computing extreme or interior eigenvalues of a symmetric matrix by a polynomial filtered Lanczos procedure. Haw-ren Fang and Yousef Saad. C++; mex files for  MATLAB and OCTAVE.
+  * [http://www.mathworks.com/help/techdoc/ref/eigs.html MATLAB's eigs]. Mathworks. Proprietary. MATLAB.
+  * [http://www.mathworks.com/matlabcentral/fileexchange/48-lobpcg-m LOBPCG ]. Locally Optimal Block Preconditioned Conjugate Gradient Method (LOBPCG). Andrew Knyazev. Open source. MATLAB.
+  * [http://www-users.cs.umn.edu/~saad/software/filtlan/index.html FILTRAN ]. Software library written in C/C++ for computing extreme or interior eigenvalues of a symmetric matrix by a polynomial filtered Lanczos procedure. Haw-ren Fang and Yousef Saad. C++; mex files for  MATLAB and OCTAVE.
