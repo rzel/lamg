@@ -5,6 +5,8 @@ The provided LAMG MATLAB implementation scaled linearly for a diverse set of 168
 = Summary Statistics =
 All times are in seconds. Solve times are per significant figure. Total time = setup time + 10 x solve time (i.e., the runtime of a a single solve to 10 significant figures).
 
+These are the latest results as of September 17, 2011.
+
 <code>
 Statistics for 1213 graphs out of 1680 with at least 5000 edges.
 Total time    sec: median=2.1e-005   mean=2.8e-005 +- 2.5e-005
