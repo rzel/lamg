@@ -1,7 +1,9 @@
-#summary A taxonomy of related solvers of large sparse linear system.
+#summary A taxonomy of software packages containing large sparse linear system solvers.
 
 = Linear Solvers =
 
-* [http://code.google.com/p/pyamg/ pyamg] - algebraic multigrid solvers in python
+  * [http://code.google.com/p/pyamg/ pyamg] - algebraic multigrid solvers in python. Authors: Nathan Bell, Luke Olson, Jacob Schroder.
+  * [AGMG http://homepages.ulb.ac.be/~ynotay/AGMG/] - Iterative solution with AGgregation-based algebraic MultiGrid. Author: Y. Notay, A. Napov.
+  * [MATLAB's backslash operator http://www.mathworks.com/help/techdoc/ref/mldivide.html]. Author: Mathworks.
 
 = Eigensolvers =
