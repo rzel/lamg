@@ -1,6 +1,6 @@
 #summary LAMG MATLAB code installation instructions.
 
-=Installation=
+=LAMG Code Installation=
   * *Step 1:* [http://code.google.com/p/lamg/downloads/list Download] the latest release of the code.
   * *Step 2:* unzip the LAMG distribution file into a directory, say `C:\lamg`.
   * *Step 3:* Add the following directories to your MATLAB path (e.g., edit the provided pathdef.m and type "p=pathdef; path(p);" at the MATLAB prompt):
