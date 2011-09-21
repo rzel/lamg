@@ -1,20 +1,16 @@
 #summary Downloading and installation the LAMG graph collection. Running LAMG in batch mode over all graphs.
 #labels Featured
 
+= Downloading and Installing =
+
 LAMG comes with an extensive testing collection of over 1700 real-world graph instances with up to about 10 million edges, collected from the following sources:
   * The [http://www.cise.ufl.edu/research/sparse/matrices/ University of Florida Sparse Matrix collection (UF)] by Tim Davis.
   * [http://staffweb.cms.gre.ac.uk/~wc06/partition/ C. Walshaw's] graph partitioning archive.
   * I. Safro's [http://www.mcs.anl.gov/~safro/mloga.html MLogA results archive] at Argonne National Laboratory.
   * The FTP site of the [http://dimacs.rutgers.edu/Challenges/ DIMACS Implementation Challenges].
 
-= Introduction =
+= Running LAMG in Batch Mode =
 
-Add your content here.
+= Emailing the Results =
 
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+sendmail('livne@uchicago.edu', 'LAMG Results', 'LAMG Log File', {'C:\oren\code\amg\out\graph\2011-09-20\cycle_results_log.txt'});
