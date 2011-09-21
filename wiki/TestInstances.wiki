@@ -1,7 +1,7 @@
 #summary Downloading and installation the LAMG graph collection. Running LAMG in batch mode over all graphs.
 #labels graphConvert9046800Infuf
 
-= Downloading and Installing =
+= Downloading and Installing the Test Collection =
 
 LAMG comes with an extensive testing collection of over 1700 real-world graph instances with up to about 10 million edges, collected from the following sources:
   * The [http://www.cise.ufl.edu/research/sparse/matrices/ University of Florida Sparse Matrix collection (UF)] by Tim Davis.
