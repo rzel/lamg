@@ -8,6 +8,9 @@ LAMG comes with an extensive testing collection of over 1700 real-world graph in
   * [http://staffweb.cms.gre.ac.uk/~wc06/partition/ C. Walshaw's] graph partitioning archive.
   * I. Safro's [http://www.mcs.anl.gov/~safro/mloga.html MLogA results archive] at Argonne National Laboratory.
   * The FTP site of the [http://dimacs.rutgers.edu/Challenges/ DIMACS Implementation Challenges].
+Each source except UF corresponds to a zip file in the [Downloads] section. The UF collection is obtained from the UF server via the {{{ufget}}} API.
+
+*Step 1:* Download all TestInstance archive files (ml.zip, walshaw.zip, ...) from the [Downloads] section.
 
 = Running LAMG in Batch Mode =
 
