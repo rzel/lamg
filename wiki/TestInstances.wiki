@@ -36,7 +36,7 @@ sendmail('user@yourdomain.com', 'LAMG Results', 'LAMG Log File', ...
    {'<YOUR out_dir>\graph\2011-09-20\cycle_results_log.txt'});
 }}}
 
-= Supported Graph Input Formats =
+= Importing Your Graphs - Supported Input Formats =
 The LAMG `graph` package contains APIs for reading and writing graphs from/to input files in a variety of formats:
 {{{
 GENERATED(0)            % Graph instance programmaticaly generated -- not read from an input source
@@ -49,4 +49,3 @@ PLAIN(6)                % GraphViz plain text format
 COMPRESSED_COLUMN(7)    % Compressed column format [i,j,aij]
 }}}
 Other formats can easily be added to this framework. If you have graphs that you would like to input to LAMG in one of the above formats, you can readily use the `graphConvert` utility to convert them to the standard LAMG input. This is a MAT format that is similar but not identical to the UF format.
-
