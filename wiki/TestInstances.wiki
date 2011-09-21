@@ -10,10 +10,13 @@ LAMG comes with an extensive testing collection of over 1700 real-world graph in
   * The FTP site of the [http://dimacs.rutgers.edu/Challenges/ DIMACS Implementation Challenges].
 Each source except UF corresponds to a zip file in the [http://code.google.com/p/lamg/downloads/list Downloads] section that has been converted to the LAMG input format. The UF collection is obtained from the UF server via the `ufget` API.
 
-*Step 1:* [http://code.google.com/p/lamg/wiki/Installation Download and install] the LAMG code.
-*Step 2:* In your `config.txt` file, set a `mat_dir` appropriate for your system (linux uses slashes; windows uses backslashes in dir paths). This directory will contain all graph data.
-*Step 2:* Download all Test-Instance archive files (ml.zip, walshaw.zip, ...) from the [http://code.google.com/p/lamg/downloads/list Downloads] section. Unzip the files into `mat_dir`.
-*Step 3:* Download and convert the UF collection to LAMG format: at the MATLAB prompt, type
+* *Step 1:* [http://code.google.com/p/lamg/wiki/Installation Download and install] the LAMG code.
+
+* *Step 2:* In your `config.txt` file, set a `mat_dir` appropriate for your system (linux uses slashes; windows uses backslashes in dir paths). This directory will contain all graph data.
+
+* *Step 3:* Download all Test-Instance archive files (ml.zip, walshaw.zip, ...) from the [http://code.google.com/p/lamg/downloads/list Downloads] section. Unzip the files into `mat_dir`.
+
+* *Step 4:* Download and convert the UF collection to LAMG format: at the MATLAB prompt, type
 {{{
 graphConvert(0, 6e6, {'uf'}, '');
 }}}
