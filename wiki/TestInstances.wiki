@@ -15,7 +15,7 @@ Each source except UF corresponds to a zip file in the [http://code.google.com/p
 *Step 2:* Download all Test-Instance archive files (ml.zip, walshaw.zip, ...) from the [http://code.google.com/p/lamg/downloads/list Downloads] section. Unzip the files into `mat_dir`.
 *Step 3:* Download and convert the UF collection to LAMG format: at the MATLAB prompt, type
 {{{
-   graphConvert(0, 6e6, {'uf'}, '');
+graphConvert(0, 6e6, {'uf'}, '');
 }}}
 This downloads all symmetric UF graph instances with 0 to 6 million edges into `mat_dir/uf`. The maximum number of edges should match the amount of RAM you have on your machine.
 
@@ -23,5 +23,5 @@ This downloads all symmetric UF graph instances with 0 to 6 million edges into `
 
 = Emailing the Results =
 {{{
-   sendmail('livne@uchicago.edu', 'LAMG Results', 'LAMG Log File', {'C:\oren\code\amg\out\graph\2011-09-20\cycle_results_log.txt'});
+sendmail('livne@uchicago.edu', 'LAMG Results', 'LAMG Log File', {'C:\oren\code\amg\out\graph\2011-09-20\cycle_results_log.txt'});
 }}}
