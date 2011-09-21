@@ -4,7 +4,7 @@
 LAMG comes with an extensive testing collection of over 1700 real-world graph instances with up to about 10 million edges, collected from the following sources:
   * The [http://www.cise.ufl.edu/research/sparse/matrices/ University of Florida Sparse Matrix collection (UF)] by Tim Davis.
   * [http://staffweb.cms.gre.ac.uk/~wc06/partition/ C. Walshaw's] graph partitioning archive.
-  * I. Safro's [MLogA http://www.mcs.anl.gov/~safro/mloga.html results archive] at Argonne National Laboratory.
+  * I. Safro's [http://www.mcs.anl.gov/~safro/mloga.html MLogA results archive] at Argonne National Laboratory.
   * The FTP site of the [http://dimacs.rutgers.edu/Challenges/ DIMACS Implementation Challenges].
 
 = Introduction =
