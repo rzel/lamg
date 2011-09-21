@@ -17,7 +17,7 @@ Each source except UF corresponds to a zip file in the [http://code.google.com/p
 {{{
 graphConvert(0, 6e6, {'uf'}, '');
 }}}
-This downloads all symmetric UF graph instances with 0 to 6 million edges into `mat_dir/uf`. The maximum number of edges should match the amount of RAM you have on your machine.
+This downloads all symmetric UF graph instances with 0 to 6 million edges into `mat_dir/uf`. The maximum number of edges should match the amount of RAM you have on your machine. If you had unlimited RAM, you could use `Inf` as the second argument of ```graphConvert```.
 
 = Running LAMG in Batch Mode =
 
