@@ -17,7 +17,7 @@
      C:\lamg\core\lightspeed
      C:\lamg\core\matlab_xunit\xunit
 }}}
-  * *Step 4*: verify a successful installation of LAMG by typing at the MATLAB prompt:
+  * *Step 4*: verify the successful installation of LAMG by typing at the MATLAB prompt:
 {{{
 >> lamg_example
 }}}
