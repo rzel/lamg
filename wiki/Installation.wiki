@@ -1,5 +1,8 @@
 #summary LAMG MATLAB code installation instructions.
 
+=MATLAB Prerequisites==
+At the present time, LAMG depends on the call {{{graphconncomp()}}} from the Bioinformatics Toolbox. If you are willing to contribute an open-source implementation of computing a graph's connected components, please submit the code to the lamg-user mailing list and we will remove this dependency.
+
 =LAMG Code Installation=
   * *Step 1:* [http://code.google.com/p/lamg/downloads/list Download] the latest release of the code.
   * *Step 2:* unzip the LAMG distribution file into a directory, say `C:\lamg`.
