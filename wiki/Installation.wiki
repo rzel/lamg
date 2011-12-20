@@ -15,7 +15,7 @@ At the present time, LAMG depends on the call {{{graphconncomp()}}} from the Bio
 {{{
 >> lamg_example
 }}}
-  Output should be similar to:
+  The output should be similar to:
   {{{
 Initial     e=4.589e+002
 Iter    1   e=2.896e+002  conv=0.631   time=0.13 [sec]
