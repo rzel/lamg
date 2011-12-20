@@ -9,7 +9,7 @@ At the present time, LAMG depends on the call {{{graphconncomp()}}} from the Bio
   * *Step 3:* In MATLAB, cd into the LAMG distribution directory.
   * *Step 4:* Run the comand
 {{{
-     addpath('core/util', 'core/main', 'core/lightspeed', 'graph/main', 'graph/ufget', 'amg/main', 'amg/main/util');
+     addpath('core/util','core/main','core/lightspeed','graph/main','graph/ufget','amg/main','amg/main/util');
 }}}
   * *Step 5*: verify the successful installation of LAMG by typing at the MATLAB prompt:
 {{{
