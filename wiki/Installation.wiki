@@ -6,25 +6,16 @@ At the present time, LAMG depends on the call {{{graphconncomp()}}} from the Bio
 =LAMG Code Installation=
   * *Step 1:* [http://code.google.com/p/lamg/downloads/list Download] the latest release of the code.
   * *Step 2:* unzip the LAMG distribution file into a directory, say `C:\lamg`.
-  * *Step 3:* Add the following directories to your MATLAB path (e.g., edit the provided pathdef.m and type "p=pathdef; path(p);" at the MATLAB prompt):
+  * *Step 3:* In MATLAB, cd into the LAMG distribution directory.
+  * *Step 4:* Run the comand
 {{{
-     C:\lamg\amg\main\util
-     C:\lamg\amg\main
-     C:\lamg\graph\graphViz4Matlab
-     C:\lamg\graph\graphViz4Matlab\layouts
-     C:\lamg\graph\graphViz4Matlab\util
-     C:\lamg\graph\main
-     C:\lamg\graph\ufget
-     C:\lamg\core\util
-     C:\lamg\core\main
-     C:\lamg\core\lightspeed
-     C:\lamg\core\matlab_xunit\xunit
+     addpath('core/util', 'core/main', 'core/lightspeed', 'graph/main', 'graph/ufget', 'amg/main', 'amg/main/util');
 }}}
-  * *Step 4*: verify the successful installation of LAMG by typing at the MATLAB prompt:
+  * *Step 5*: verify the successful installation of LAMG by typing at the MATLAB prompt:
 {{{
 >> lamg_example
 }}}
-  Output should be:
+  Output should be similar to:
   {{{
 Initial     e=4.589e+002
 Iter    1   e=2.896e+002  conv=0.631   time=0.13 [sec]
