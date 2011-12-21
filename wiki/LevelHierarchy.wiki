@@ -1,0 +1,122 @@
+#summary How to view the LAMG setup hierarchy once it is constructed.
+
+=Creating a Hierarchy=
+A LAMG multi-level hierarchy can be created for a symmetric adjacency sparse matrix {{{A}}}. There is no need to solve a linear system {{{Ax=b}}}. For instance, the 5-point Laplacian on a 20x20 grid can be constructed manually, or via the provided functions
+{{{
+g = Graphs.grid('fd', [20 20]);
+A = g.symAdjacency;
+}}}
+To create the hierarchy, run
+<a ref="#create">
+{{{
+% Construct a solver
+lamg = Lamg();
+% Construct the LAMG multi-level hierarchy
+setup = lamg.setup(A);
+}}}
+=Printing Hierarchy Statistics=
+Displaying the {{{setup}}} object prints summative statistics:
+{{{
+>> setup
+
+setup = 
+
+Multi-level setup
+	#levels      = 3
+	Design gamma = 1.5
+	# components = 1
+	Node  complexity = 1.715
+	Edge  complexity = 2.314
+	Cycle complexity = 3.505
+Level Type     Nodes   Edges    #Comp alpha    AvgDeg nu  gam  Work  #TV     
+===========================================================================
+1     FINEST   400     760      0     1.000    3.80   0   1.0  0.00  0  
+2     ELIM     194     709      0     0.485    7.31   3   1.5  3.31  8  
+3     AGG      92      290      1     0.474    6.30   0   0.0  0.19  0  
+}}}
+
+=Getting Individual Level Information=
+The hierarchy is stored in the cell array {{{setup.level}}}. Levels are sorted finest to coarsest, i.e., {{{setup.level{1}}}} is the finest level, {{{setup.level{2}}}} is the first coarse level, and so on.
+{{{
+>> setup.level
+
+ans = 
+
+    [1x1 amg.level.LevelFinest     ]
+    [1x1 amg.level.LevelElimination]
+    [1x1 amg.level.LevelAgg        ]
+
+>> setup.level{1}
+
+ans = 
+
+  amg.level.LevelFinest handle
+  Package: amg.level
+
+  Properties:
+                   coord: []
+              zeroMatrix: 0
+       disconnectedNodes: [1x0 double]
+    hasDisconnectedNodes: 0
+           numComponents: 1
+          componentIndex: {[400x1 double]}
+                   rhsMu: []
+                       x: []
+                   index: 1
+                   state: [1x1 amg.setup.CoarseningState]
+                    type: [1x1 amg.level.LevelType]
+                    name: 'graph'
+                    size: 400
+               fineLevel: []
+                       g: [1x1 graph.api.Graph]
+                 relaxer: [1x1 amg.relax.RelaxElimination]
+                       K: 8
+                       r: []
+                       A: [400x400 double]
+
+  Methods, Events, Superclasses
+
+>> setup.level{2}
+
+ans = 
+
+  amg.level.LevelElimination handle
+  Package: amg.level
+
+  Properties:
+                   coord: []
+               numStages: 3
+                   stage: {[1x1 struct]  [1x1 struct]  [1x1 struct]}
+                       c: [194x1 double]
+              components: []
+              zeroMatrix: 0
+       disconnectedNodes: [1x0 double]
+    hasDisconnectedNodes: 0
+           numComponents: 1
+          componentIndex: {[194x1 double]}
+                   rhsMu: []
+                       x: [194x8 double]
+                   index: 2
+                   state: [1x1 amg.setup.CoarseningState]
+                    type: [1x1 amg.level.LevelType]
+                    name: 'graph'
+                    size: 194
+               fineLevel: [1x1 amg.level.LevelFinest]
+                       g: [1x1 graph.api.Graph]
+                 relaxer: [1x1 amg.relax.RelaxGaussSeidel]
+                       K: 8
+                       r: []
+                       A: [194x194 double]
+
+  Methods, Events, Superclasses
+}}}
+Each level holds the following fields (and many other useful fields):
+* {{{g}}} - graph corresponding to this level's Laplacian matrix. Has no nodes.
+* {{{K}}} - number of test vectors.
+* {{{x}}} - nxK test vector matrix. {{{x(:,k)}}} is the {{{k}}}_th_ test vector.
+vector.
+* {{{P}}} - interpolation operator (available except at finest level in LAMG 1.0.2 and later versions).
+* {{{R}}} - restriction operator (available except at finest level in LAMG 1.0.2 and later versions).
+* {{{T}}} - coarse-variable type operator (available except at finest level in LAMG 1.0.2 and later versions).
+
+
