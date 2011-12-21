@@ -124,4 +124,11 @@ _(This documentation will change and be made simpler in LAMG 1.1.0)_
 
 Use the {{{plotLevel}}} function. In LAMG 1.0.x, this function relies on the {{{graphViz}}} MATLAB package, and you will need to provide the path to the {{sfdp}}} executable on your system in the file {{{config.txt}}} under the LAMG distribution.
 {{{
+>> plotLevel(setup, 3, 'nodeSize', 0.04);
+neato - graphviz version 2.28.0 (20110507.0327) 
+dot - graphviz version 2.28.0 (20110507.0327) 
+twopi - graphviz version 2.28.0 (20110507.0327) 
+neato - graphviz version 2.28.0 (20110507.0327) 
+fdp - graphviz version 2.28.0 (20110507.0327) 
+>>
 }}}
