@@ -132,3 +132,6 @@ neato - graphviz version 2.28.0 (20110507.0327)
 fdp - graphviz version 2.28.0 (20110507.0327) 
 >>
 }}}
+<p align="center">
+<img src="http://lamg.googlecode.com/files/level3_plot.png" width="45%" align="middle" alt="Logo"/>
+</p>
