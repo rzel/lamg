@@ -111,13 +111,14 @@ ans =
   Methods, Events, Superclasses
 }}}
 Each level holds the following fields (and many other useful fields):
+  * {{{type}}} - level type: {{{FINEST}}} = finest level, {{{ELIMINATION}}} = obtained using exact elimination from next-finer level, {{{AGG}}} = aggregation of next-finer level nodes.
   * {{{g}}} - graph corresponding to this level's Laplacian matrix. Has no nodes.
   * {{{K}}} - number of test vectors.
   * {{{x}}} - nxK test vector matrix. {{{x(:,k)}}} is the {{{k}}}_th_ test vector.
 vector.
-  * {{{P}}} - interpolation operator (available except at finest level in LAMG 1.1.0 and later versions).
-  * {{{R}}} - restriction operator (available except at finest level in LAMG 1.1.0 and later versions).
-  * {{{T}}} - coarse-variable type operator (available except at finest level in LAMG 1.1.0 and later versions).
+  * {{{P}}} - interpolation operator (available except in finest level in LAMG 1.1.0 and later versions).
+  * {{{R}}} - restriction operator (available except in finest level in LAMG 1.1.0 and later versions).
+  * {{{T}}} - coarse-variable type operator (available in {{{AGG}}} levels only).
 
 =Plotting a Level=
 _(This documentation will change and be made simpler in LAMG 1.1.0)_
