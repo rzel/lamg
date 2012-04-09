@@ -194,8 +194,7 @@ logger('amg') = 'WARN';
 }}}
 
 =LAMG Code Uninstallation=
-  * *Step 1:* In MATLAB, cd into <code>.
-  * *Step 2:* Run the comand
+In MATLAB, run the comand
 {{{
      cd lamg; rmpathsub('C:\lamg');
 }}}
