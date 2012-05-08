@@ -7,19 +7,19 @@ Algorithm citation:
     author  = "Livne, O. E. and Brandt, A.",
     title   = "Lean Algebraic Multigrid (LAMG): Fast Graph Laplacian Linear Solver",
     journal = "SIAM Journal of Scientific Computing",
-    note    = "in review",
+    note    = "accepted",
     url     = "http://arxiv.org/abs/1108.1310v1"
 }
 }}}
 Software citation:
 {{{
- @MISC{LAMG_Software,
-     author = "Livne, O. E.",
-     title = "Lean Algebraic Multigrid (LAMG) MATLAB Software",
-     year = "2011",
+@MISC{lamg_code,
+     author = "O. E. Livne",
+     title = "{L}ean {A}lgebraic {M}ultigrid ({LAMG}) MATLAB Software",
+     year = "2012",
      url = "http://lamg.googlecode.com",
-     note = "Release 1.0"
-     }
+     note = "Release 2.1.1. Freely available at \url{http://lamg.googlecode.com}"
+}
 }}}
 
 = Publications =
