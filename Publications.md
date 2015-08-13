@@ -1,0 +1,25 @@
+# Citing LAMG #
+Algorithm citation:
+```
+@article{LAMG_Report,
+    author  = "Livne, O. E. and Brandt, A.",
+    title   = "Lean Algebraic Multigrid (LAMG): Fast Graph Laplacian Linear Solver",
+    journal = "SIAM Journal of Scientific Computing",
+    note    = "accepted",
+    url     = "http://arxiv.org/abs/1108.1310v1"
+}
+```
+Software citation:
+```
+@MISC{lamg_code,
+     author = "O. E. Livne",
+     title = "{L}ean {A}lgebraic {M}ultigrid ({LAMG}) MATLAB Software",
+     year = "2012",
+     url = "http://lamg.googlecode.com",
+     note = "Release 2.1.1. Freely available at \url{http://lamg.googlecode.com}"
+}
+```
+
+# Publications #
+  1. Livne, O.E. and Brandt, A. Lean Algebraic Multigrid (LAMG): Fast Graph Laplacian Linear Solver, ArXiV e-print, DOI: http://arxiv.org/abs/1108.0123, 2011.
+  1. Livne, O.E. and Brandt, A. Lean Algebraic Multigrid (LAMG): Fast Graph Laplacian Linear Solver, submitted to SIAM J. Sci. Comput., DOI: http://arxiv.org/abs/1108.1310.

@@ -1,0 +1,24 @@
+The provided LAMG MATLAB implementation scaled linearly for a diverse set of 1680 real-world graphs with up to six million edges available at the [Downloads](http://code.google.com/p/lamg/downloads/list) section. This multilevel methodology can be fully parallelized and extended to eigenvalue problems and other graph computations.
+
+# Summary Statistics #
+All times are in seconds. Solve times are per significant figure. Total time = setup time + 10 x solve time (i.e., the runtime of a a single solve to 10 significant figures).
+
+These are the latest results as of September 17, 2011.
+
+```
+
+Statistics for 1213 graphs out of 1680 with at least 5000 edges.
+Total time    sec: median=2.1e-005   mean=2.8e-005 +- 2.5e-005
+Setup time    sec: median=1.5e-005   mean=1.7e-005 +- 1.2e-005
+Solve time    sec: median=7.1e-007   mean=1.5e-006 +- 2.3e-006 - flat correction
+Solve time    sec: median=6.3e-007   mean=1.1e-006 +- 1.4e-006 - adaptive (minres)
+ACF (flat, nontrivial)       : median=0.153      mean=0.221 +- 0.201
+ACF (adaptive, nontrivial)   : median=0.040      mean=0.061 +- 0.061
+Adaptive gain sec: median=1.127      mean=1.208 +- 0.291
+%Setup (flat):       median=68.4%      mean=66.0% +- 16.6%
+%Setup (adaptive):   median=71.1%      mean=69.9% +- 12.7%
+```
+
+# Performance Plots #
+
+See the [LAMG ArXiv technical report](http://arxiv.org/abs/1108.0123), section 4 for plots and further details.
